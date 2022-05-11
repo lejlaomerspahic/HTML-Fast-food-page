@@ -18,12 +18,13 @@ body{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 3rem 8rem;
-    border-bottom: grey;
+    padding: 2rem 8rem;
+    border-bottom: .1rem solid grey;
     position: fixed;
     top: 0rem; 
-    left: 2rem; 
-    right: 2rem;
+    left: 0rem; 
+    right: 0rem;
+    
 }
 
 .header .logo img{
@@ -51,4 +52,64 @@ body{
 
 .header .icons div:hover{
     color:beige;
+}
+
+.home{
+    min-height: 60pc;
+    display: flex;
+    align-items: center;
+    background:url(./photo1.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.home .content{
+    max-width: 60rem;
+}
+
+.home .content h3{
+    font-size: 6rem;
+    color:#fff;
+    padding-left: 10rem;
+    padding-top: 20rem;
+}
+
+.home .content p{
+    font-size: 2rem;
+    margin-left: 50rem;
+    color: gray;
+    padding:1rem 0;
+}
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background:black;
+    flex-wrap: wrap;
+    min-width: 100px;
+}
+
+.about .row .image img{
+    width: 90%;
+    height: 90%;
+    padding-left: 10rem;
+}
+
+.image{
+    width: 50pc;
+}
+
+.about .row .content{
+    flex: 30rem;
+    padding-right: 10rem;
+}
+
+.about .row .content h3{
+    font-size: 3rem;
+    color:#fff;
+}
+
+.about .row .content p{
+    font-size: 1.5rem;
+    color:#ccc;
 }
