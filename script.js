@@ -48,12 +48,10 @@ fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food')
     }
 
   const putFood=()=>{
-  const FoodFormID=document.getElementById("food-id").value;
-  const FoodFormName=document.getElementById("food-name").value;
-  const FoodFormPrice=document.getElementById("food-price").value;
-  const FoodFormURL=document.getElementById("food-url").value;
-
-  
+  FoodFormID=document.getElementById("food-id").value;
+  FoodFormName=document.getElementById("food-name").value;
+  FoodFormPrice=document.getElementById("food-price").value;
+  FoodFormURL=document.getElementById("food-url").value;
   fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/api/Food`, {
         method: 'PUT',
         headers: new Headers({'content-type': 'application/json'}),
@@ -78,4 +76,24 @@ fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food')
     })
 }
 
+const addFood = () => {
+  const FoodFormID1=document.getElementById("food-id1").value;
+  const FoodFormName1=document.getElementById("food-name1").value;
+  const FoodFormPrice1=document.getElementById("food-price1").value;
+  const FoodFormURL1=document.getElementById("food-url1").value;
+  
+  fetch(`https://ptf-web-dizajn-2022.azurewebsites.net/api/Food`, {
+      method: 'POST',
+      headers: new Headers({'content-type': 'application/json'}),
+      body: JSON.stringify({
+        id: FoodFormID1,
+        name: FoodFormName1,
+        price: FoodFormPrice1,
+        imageUrl: FoodFormURL1
+      })
+  })
+  .then(res => {
+      console.log(res);
+  })
+}
 

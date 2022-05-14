@@ -23,20 +23,60 @@
             <a href="#home">HOME</a>
             <a href="#about">ABOUT US</a>
             <a href="#products">PRODUCTS</a>
+            
         </nav>
     
-        <div class="icons">
-            <div class="fas fa-hamburger" id="cart-btn"></div>
+        <div class="icon">
+            <button type="button"  class="fas fa-hamburger" data-toggle="modal" data-target="#modalLoginForm"></button>
+        </div>
+        </header> 
+
+<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header text-center">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body mx-3">
+        <div class="md-form mb-4">
+          <label for="food-id1" class="col-form-label">ID</label>
+          <input type="text" class="form-control" id="food-id1">
+        </div>
+
+        <div class="md-form mb-4">
+          <label for="food-name1" class="col-form-label">Name:</label>
+          <input type="text" class="form-control" id="food-name1">
         </div>
 
         
-        </header>  
+        <div class="md-form mb-4">
+          <label for="food-price1" class="col-form-label">Price:</label>
+          <input type="text" class="form-control" id="food-price1">
+        </div>
+
+        
+        <div class="md-form mb-4">
+          <label for="food-url1" class="col-form-label">ImgURL:</label>
+          <input type="text" class="form-control" id="food-url1">
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary" onClick="addFood()">Add</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 
     <section class="home" id="home">
 
         <div class="content">
-            <h3>“Trebaš jesti da bi živio, a ne živjeti da bi jeo.”</h3>
-            <p>Ciceron</p>
+            <h1>FAST FOOD KING</h1>
+            <h2>"Jedi kao kralj!"</h2>
         </div>
     
     </section>
@@ -80,19 +120,19 @@
             </div>
             <div class="modal-body">
               <form>
-                <div class="group1">
+                <div class="group">
                     <label for="food-id" class="col-form-label">ID:</label>
                     <input type="text" class="form-control" id="food-id">
                   </div>
-                <div class="group1">
+                <div class="group">
                   <label for="food-name" class="col-form-label">Name:</label>
                   <input type="text" class="form-control" id="food-name">
                 </div>
-                <div class="group1">
+                <div class="group">
                   <label for="food-price" class="col-form-label">Price:</label>
                   <input type="text" class="form-control" id="food-price">
                 </div>
-                <div class="group1">
+                <div class="group">
                   <label for="food-url" class="col-form-label">ImgURL:</label>
                   <input type="text" class="form-control" id="food-url">
                 </div>
@@ -100,7 +140,7 @@
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onClick="putFood()">Send message</button>
+              <button type="button" class="btn btn-primary" onClick="putFood()">Edit</button>
             </div>
           </div>
         </div>

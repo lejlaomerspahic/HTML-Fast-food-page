@@ -44,19 +44,8 @@ body{
     padding-bottom: .5rem;
 }
 
-.header .icons div{
-    color:#fff;
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin-left: 2rem;
-}
-
-.header .icons div:hover{
-    color:beige;
-}
-
 .home{
-    min-height: 45pc;
+    min-height: 70rem;
     display: flex;
     align-items: center;
     background:url(./photo1.jpg) no-repeat;
@@ -65,21 +54,22 @@ body{
 }
 
 .home .content{
-    max-width: 60rem;
+    max-width: 80rem;
 }
 
-.home .content h3{
+.home .content h1{
     font-size: 6rem;
-    color:#fff;
     padding-left: 10rem;
     padding-top: 20rem;
-    text-shadow: gray 5px 5px 5px;
+    color: white;
+    text-shadow: rgb(255,0, 0) 5px 5px 5px;
+    margin-left: 20rem;
 }
 
-.home .content p{
-    font-size: 2rem;
-    margin-left: 50rem;
-    color: gray;
+.home .content h2{
+    font-size: 4rem;
+    margin-left: 41rem;
+    color: rgb(255, 255, 255);
     padding:1rem 0;
     
 }
@@ -106,7 +96,7 @@ body{
 
 }
 .heading span{
-    color:rgb(218, 218, 186);
+    color:rgb(255, 0, 0);
     text-transform: uppercase;
 }
 .image{
@@ -200,4 +190,11 @@ img{
 
 .form-control {
     font-size: 2rem;
+}
+
+.header .icon button{
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 4rem;
+    margin-left: 2rem;
 }
