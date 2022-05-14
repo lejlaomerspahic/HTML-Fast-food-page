@@ -125,23 +125,30 @@ body{
     text-align: justify;
 }
 
-.content-wrapper{
-    margin-left: 10rem;
-    margin-right: 10rem;
+.container{
     display: grid;
     grid-template-columns: repeat(5, 20%);
     color: beige;
+    max-width: 1750px;
+    
 }
 .card{
     padding: 2rem;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 1.8rem;
     border:.1rem solid beige;  
+    background-color: black;
 }
 
 .card-body {
 padding-top: 1rem;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 1.5rem;
+text-align: center;
 }
+
+.btn {
+    font-size: 1.5rem;
+}
+
 
 img{
     width: 100%;
@@ -183,3 +190,14 @@ img{
     color:rgb(218, 218, 186);
 }
 
+
+.modal-content {
+    background-color: black;
+    padding: 10rem;
+    font-size: 2rem;
+    color:white
+}
+
+.form-control {
+    font-size: 2rem;
+}
