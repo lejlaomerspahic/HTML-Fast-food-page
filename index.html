@@ -13,154 +13,132 @@
 
 </head>
 <body>
-    <header class="header">
 
-        <a href="#" class="logo">
-            <img src="photo.png" alt="">
-        </a>
-    
-        <nav class="navbar">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT US</a>
-            <a href="#products">PRODUCTS</a>
-            
-        </nav>
-    
-        <div class="icon">
-            <button type="button"  class="fas fa-hamburger" data-toggle="modal" data-target="#modalLoginForm"></button>
+  <header class="header">
+    <a href="#" class="logo">
+      <img src="photo.png" alt="">
+    </a>
+    <nav class="navbar">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#products">PRODUCTS</a>   
+    </nav>
+    <div class="icon">
+      <button type="button"  class="fas fa-hamburger" data-toggle="modal" data-target="#modalLoginForm"></button>
+    </div>
+  </header> 
+
+  <div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
         </div>
-        </header> 
-
-<div class="modal fade" id="modalLoginForm" tabindex="-1" role="dialog" aria-labelledby="myModalLabel"
-  aria-hidden="true">
-  <div class="modal-dialog" role="document">
-    <div class="modal-content">
-      <div class="modal-header text-center">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-      </div>
-      <div class="modal-body mx-3">
         <div class="md-form mb-4">
-          <label for="food-id1" class="col-form-label">ID</label>
-          <input type="text" class="form-control" id="food-id1">
+          <div class="md-form mb-4">
+            <label for="food-id" class="col-form-label">ID</label>
+            <input type="text" class="form-control" id="food-id">
+          </div>
+          <div class="md-form mb-4">
+            <label for="food-name" class="col-form-label">Name:</label>
+            <input type="text" class="form-control" id="food-name">
+          </div>
+          <div class="md-form mb-4">
+            <label for="food-price" class="col-form-label">Price:</label>
+            <input type="text" class="form-control" id="food-price">
+          </div>
+          <div class="md-form mb-4">
+            <label for="food-url" class="col-form-label">ImgURL:</label>
+            <input type="text" class="form-control" id="food-url">
+          </div>
         </div>
-
-        <div class="md-form mb-4">
-          <label for="food-name1" class="col-form-label">Name:</label>
-          <input type="text" class="form-control" id="food-name1">
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary" onClick="addFood()">Add</button>
         </div>
-
-        
-        <div class="md-form mb-4">
-          <label for="food-price1" class="col-form-label">Price:</label>
-          <input type="text" class="form-control" id="food-price1">
-        </div>
-
-        
-        <div class="md-form mb-4">
-          <label for="food-url1" class="col-form-label">ImgURL:</label>
-          <input type="text" class="form-control" id="food-url1">
-        </div>
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary" onClick="addFood()">Add</button>
       </div>
     </div>
   </div>
-</div>
 
+  <section class="home" id="home">
+   <div class="content">
+      <h1>FAST FOOD KING</h1>
+      <h2>"Jedi kao kralj!"</h2>
+    </div>
+  </section>
 
-    <section class="home" id="home">
-
+  <section class="about" id="about">
+    <h1 class="heading"> <span>ABOUT</span> US</h1>
+      <div class="row">
+        <div class="image">
+          <img src="photo2.jpg" alt="">
+        </div>
         <div class="content">
-            <h1>FAST FOOD KING</h1>
-            <h2>"Jedi kao kralj!"</h2>
+          <p> Osnovani 2014. godine dosljednim radom i trudom sa posebnim akcentom na kvalitet proizvoda i usluge, a uz to i prihvatljive cijene, vrlo brzo smo postali prepoznatljiv brend.
+              Danas uključujemo tri poslovnice, od kojih su dva fast fooda i jedan restoran. Specijalizirani smo uglavnom u ponudi specijaliteta sa roštilja, prvenstveno ćevapa vrhunskog kvaliteta i okusa koje sami proizvodimo a koje možete isprobati za već od 3.00KM!
+              Naravno, pored ćevapa nudimo i druge specijalitete brze prehrane – hamburgere, chickenburgere, raznovrsne sendviče, kobasice, sudžukice, pileće specijalitete, te smo jedni od prvih koji su u svojoj ponudi napravili različite kombinacije i tzv. mixeve jela, kako bi kupci u okviru jednog jela mogli uživati u različitim vrstama mesa.
+              Budući da smo uvijek bili fokusirani na domaće meso i na vlastitu proizvodnju, 2019. godine smo investirali blizu 500 000 KM u naše mesno prerađivačke pogone. Kupujemo i prerađujemo meso isključivo domaćeg porijekla, od naših domaćih proizvođača i uzgojivača. Pored korištenja za vlastite potrebe, distribuiramo sirovo meso i prerađevine u cijeloj BiH a naši kupci su i neki od vrlo poznatih trgovačkih lanaca.
+              Svojim kupcima smo dostupni svaki dan od 08:00 – 23:00, a pored vikenda vrijedno osoblje je na raspolaganju i tokom praznika. Naravno, za sve one koji nas nisu u prilici posjetiti obezbjedili smo i dostavu hrane.
+          </p>
         </div>
-    
-    </section>
+      </div>
+  </section>
 
-    <section class="about" id="about">
-
-        <h1 class="heading"> <span>ABOUT</span> US</h1>
-    
-        <div class="row">
-    
-            <div class="image">
-                <img src="photo2.jpg" alt="">
-            </div>
-    
-            <div class="content">
-                <p> Osnovani 2014. godine dosljednim radom i trudom sa posebnim akcentom na kvalitet proizvoda i usluge, a uz to i prihvatljive cijene, vrlo brzo smo postali prepoznatljiv brend.
-
-                    Danas uključujemo tri poslovnice, od kojih su dva fast fooda i jedan restoran. Specijalizirani smo uglavnom u ponudi specijaliteta sa roštilja, prvenstveno ćevapa vrhunskog kvaliteta i okusa koje sami proizvodimo a koje možete isprobati za već od 3.00KM!
-                    
-                    Naravno, pored ćevapa nudimo i druge specijalitete brze prehrane – hamburgere, chickenburgere, raznovrsne sendviče, kobasice, sudžukice, pileće specijalitete, te smo jedni od prvih koji su u svojoj ponudi napravili različite kombinacije i tzv. mixeve jela, kako bi kupci u okviru jednog jela mogli uživati u različitim vrstama mesa.
-                    
-                    Budući da smo uvijek bili fokusirani na domaće meso i na vlastitu proizvodnju, 2019. godine smo investirali blizu 500 000 KM u naše mesno prerađivačke pogone. Kupujemo i prerađujemo meso isključivo domaćeg porijekla, od naših domaćih proizvođača i uzgojivača. Pored korištenja za vlastite potrebe, distribuiramo sirovo meso i prerađevine u cijeloj BiH a naši kupci su i neki od vrlo poznatih trgovačkih lanaca.
-                    
-                    Svojim kupcima smo dostupni svaki dan od 08:00 – 23:00, a pored vikenda vrijedno osoblje je na raspolaganju i tokom praznika. Naravno, za sve one koji nas nisu u prilici posjetiti obezbjedili smo i dostavu hrane.
-                    
-                </p>
-            </div>
-    
-        </div>
-    </section>
-    <section class="products" id="products">
-        <h1 class="heading"> OUR <span>PRODUCTS</span> </h1>
-    <div class="container"></div>
-    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-              </button>
-            </div>
-            <div class="modal-body">
-              <form>
-                <div class="group">
-                    <label for="food-id" class="col-form-label">ID:</label>
-                    <input type="text" class="form-control" id="food-id">
+  <section class="products" id="products">
+    <h1 class="heading"> OUR <span>PRODUCTS</span> </h1>
+      <div class="container"></div>
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+           <div class="modal-content">
+              <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="group">
+                    <label for="food-id1" class="col-form-label">ID:</label>
+                    <input type="text" class="form-control" id="food-id1">
                   </div>
-                <div class="group">
-                  <label for="food-name" class="col-form-label">Name:</label>
-                  <input type="text" class="form-control" id="food-name">
-                </div>
-                <div class="group">
-                  <label for="food-price" class="col-form-label">Price:</label>
-                  <input type="text" class="form-control" id="food-price">
-                </div>
-                <div class="group">
-                  <label for="food-url" class="col-form-label">ImgURL:</label>
-                  <input type="text" class="form-control" id="food-url">
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary" onClick="putFood()">Edit</button>
-            </div>
+                  <div class="group">
+                    <label for="food-name1" class="col-form-label">Name:</label>
+                    <input type="text" class="form-control" id="food-name1">
+                  </div>
+                  <div class="group">
+                    <label for="food-price1" class="col-form-label">Price:</label>
+                    <input type="text" class="form-control" id="food-price1">
+                  </div>
+                  <div class="group">
+                    <label for="food-url1" class="col-form-label">ImgURL:</label>
+                    <input type="text" class="form-control" id="food-url1">
+                  </div>
+                </form>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" onClick="putFood()">Edit</button>
+              </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="footer">
-    
-        <div class="links">
-            <a href="#home">HOME</a>
-            <a href="#about">ABOUT US</a>
-            <a href="#products">PRODUCTS</a>
-        </div>
-    
-        <div class="credit">created by <span>Lejla Omerspahic</span> | all rights reserved</div>
-
-    </section>
+  <section class="footer">
+    <div class="links">
+      <a href="#home">HOME</a>
+      <a href="#about">ABOUT US</a>
+      <a href="#products">PRODUCTS</a>
+    </div>
+      <div class="credit">created by <span>Lejla Omerspahic</span> | all rights reserved</div>
+  </section>
 </body>
+
 <script src="./script.js"></script>
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
 </html>

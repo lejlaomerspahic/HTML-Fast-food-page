@@ -7,7 +7,7 @@
 
 html{
     font-size: 10px;
-    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     overflow-x: hidden
 }
 
@@ -26,25 +26,47 @@ body{
     top: 0rem; 
     left: 0rem; 
     right: 0rem;
-    
 }
 
 .header .logo img{
     height: 8rem;
 }
 
-.header .navbar a{
+.header a{
     margin: 1rem;
     font-size: 2rem;
     color:#fff;
     text-decoration: none;
 }
 
+.icon button{
+    color:rgb(0, 0, 0);
+    cursor: pointer;
+    font-size: 4rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.modal-content {
+    background-color: black;
+    padding: 10rem;
+    font-size: 2rem;
+    color:white
+}
+
+.form-control {
+    font-size: 2rem;
+}
+
+.btn {
+    font-size: 1.5rem;
+}
+
 .home{
     min-height: 70rem;
     display: flex;
     align-items: center;
-    background:url(./photo1.jpg) no-repeat;
+    background: url(./photo1.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -62,8 +84,7 @@ body{
     font-size: 4rem;
     margin-left: 40rem;
     color: rgb(255, 255, 255);
-    padding: 1rem ;
-    
+    padding: 1rem;
 }
 
 .about .row{
@@ -86,18 +107,16 @@ body{
     font-size: 4rem;
     text-align: center;
     padding: 4rem;
-
 }
+
 .heading span{
     color:rgb(255, 0, 0);
 }
-
 
 .about .row .content{
     flex: 45rem;
     padding-right: 6rem;
 }
-
 
 .about .row .content p{
     font-size: 2rem;
@@ -105,34 +124,30 @@ body{
     text-align: justify;
 }
 
-.container{
+.products .container{
     display: grid;
     grid-template-columns: repeat(5, 20%);
     color: beige;
     max-width: 1750px;
 }
-.card{
+
+.products .container .card{
     padding: 2rem;
     border:.1rem solid beige;  
     background-color: black;
 }
 
-.card-body {
-padding-top: 1rem;
-font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-font-size: 1.5rem;
-text-align: center;
-padding: 0rem;
-}
-
-.btn {
-    font-size: 1.5rem;
-}
-
-
 img{
     width: 100%;
     height: 80%;
+}
+
+.products .container .card .card-body {
+    padding-top: 1rem;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 1rem;
 }
 
 .footer{
@@ -149,15 +164,11 @@ img{
 
 .footer .links a{
     padding: 1rem;
-    color:#fff;
+    color:white;
     border: .1rem solid grey;
     font-size: 2rem;
     text-decoration: none;
     border-radius: 30%;
-}
-
-.footer .links a:hover{
-    background:beige;
 }
 
 .footer .credit{
@@ -171,38 +182,39 @@ img{
 }
 
 
-.modal-content {
-    background-color: black;
-    padding: 10rem;
-    font-size: 2rem;
-    color:white
-}
-
-.form-control {
-    font-size: 2rem;
-}
-
-.header .icon button{
-    color:rgb(0, 0, 0);
-    cursor: pointer;
-    font-size: 4rem;
-    margin-left: 2rem;
-    margin-right: 2rem;
-}
-
-/*mobitel*/
+/*Mobitel*/
 @media only screen and (max-width:400px){
-
     html{
         font-size: 0.3rem;
     }
+    
+    .header{
+        padding: 2rem 2rem 2rem 2rem;
+    }
+
+    .header .logo img{
+        height: 4rem;
+        width: 4rem;
+    }
+
+    .image {
+        margin-left: 7rem;
+    }
+
+    .header .navbar a{
+        font-size: 2rem;
+    }
+
+    .header .icon button{
+        font-size: 3rem;
+    }
+
     .home .content h1{
         font-size: 3rem;
         text-align: left;
         margin-left: 0rem;
         padding-left: 3rem;
         padding-top: 0rem;
-
     }
 
     .home .content h2{
@@ -213,46 +225,22 @@ img{
         padding-top: 0rem;
     }
 
-    .header{
-        padding: 2rem 2rem 2rem 2rem;
-    }
-
-    .header .logo img{
-        height: 4rem;
-        width: 4rem;
-    }
-    .image {
-        margin-left: 7rem;
-     }
-    .header .navbar a{
-        font-size: 2rem;
-    }
-    .header .icon button{
-        font-size: 3rem;
-    }
-
-    .row .content{
+    .about .row .content{
         padding-left: 6rem;
         padding-top: 2rem;
     }
-    .container{
+
+    .products .container{
         display: grid;
         grid-template-columns: repeat(2, 50%);
     }
-
-    }
+}
     
-/*tablet*/
+/*Tablet*/
 @media only screen and (min-width: 401px) and (max-width:960px){
     html{
         font-size: 0.5rem;
     }
-
-    .row .content{
-    padding-top: 4rem;
-    padding-left: 6rem;
-    }
-
 
     .home .content h1{
         text-align: left;
@@ -268,11 +256,23 @@ img{
         padding-left: 0rem;
         padding-top: 0rem;
     }
-     .card{
+
+    .about .row .content{
+    padding-top: 4rem;
+    padding-left: 6rem;
+    }
+
+    .products .container .card{
         padding: 1.5rem;
-     }
-     .image {
+    }
+
+    .about .row .image {
         margin-left: 10rem;
-     }
- }
+    }
+
+    .products .container{
+        display: grid;
+        grid-template-columns: repeat(3, 33%);
+    }
+}
     
