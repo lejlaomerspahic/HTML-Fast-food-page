@@ -2,7 +2,6 @@
     padding: 0px;
     margin: 0px;
     box-sizing: border-box;
-
 }
 
 html{
@@ -110,7 +109,7 @@ body{
 }
 
 .heading span{
-    color:rgb(255, 0, 0);
+    color:rgb(218, 218, 186);
 }
 
 .about .row .content{
@@ -128,7 +127,7 @@ body{
     display: grid;
     grid-template-columns: repeat(5, 20%);
     color: beige;
-    max-width: 1750px;
+    max-width: 95%;
 }
 
 .products .container .card{
@@ -180,7 +179,6 @@ img{
 .footer .credit span{
     color:rgb(218, 218, 186);
 }
-
 
 /*Mobitel*/
 @media only screen and (max-width:400px){
