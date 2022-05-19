@@ -19,8 +19,8 @@ fetch('https://ptf-web-dizajn-2022.azurewebsites.net/api/Food')
             <div class="card-body">
             <h1 class="card-title">${food.name}</h1>
             <p>Product price: ${food.price} KM</p>
-            <button type="button" onclick="fillData(${food.id})" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Delete product</button>
-            <button type="button" class="btn btn-danger" onclick="deleteFOOD(${food.id})">Edit product</button>
+            <button type="button" onclick="fillData(${food.id})" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Edit product</button>
+            <button type="button" class="btn btn-danger" onclick="deleteFOOD(${food.id})">Delete product</button>
             </div>
         </div>
         `;
